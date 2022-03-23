@@ -24,7 +24,8 @@
     <Keyword>NetCoreCProj</Keyword>
     <RootNamespace>CppServiceWrapper</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <TargetFramework>v4.6.2</TargetFramework>
+    <TargetFramework>
+    </TargetFramework>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -117,8 +118,8 @@
     <ClCompile Include="CppServiceWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CppMain\CppMain.vcxproj">
-      <Project>{84432fa4-1503-47a9-93ce-260e860cf6ba}</Project>
+    <ProjectReference Include="..\CppService\CppService.vcxproj">
+      <Project>{42994809-45d6-4a9a-a042-34ef70e09fe4}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

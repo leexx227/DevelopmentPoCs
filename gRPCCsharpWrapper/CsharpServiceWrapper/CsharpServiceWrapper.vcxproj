@@ -24,7 +24,7 @@
     <Keyword>NetCoreCProj</Keyword>
     <RootNamespace>CsharpServiceWrapper</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>v4.6.2</TargetFramework>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,6 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CsharpServiceWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GreeterServer\GreeterServer.csproj">
+      <Project>{21a61dfb-896a-4726-82d3-fb1967e89cc7}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

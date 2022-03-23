@@ -9,11 +9,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppService", "CppService\Cp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppServiceWrapper", "CppServiceWrapper\CppServiceWrapper.vcxproj", "{05F08DF0-62F9-4674-9099-DA59DDECECA4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CsharpServiceWrapper", "CsharpServiceWrapper\CsharpServiceWrapper.vcxproj", "{6FBC53A5-1440-454F-87D6-7CE1029C616C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterServer", "GreeterServer\GreeterServer.csproj", "{21A61DFB-896A-4726-82D3-FB1967E89CC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterClient", "GreeterClient\GreeterClient.csproj", "{B28B0AA6-FCA9-416F-93DF-482B27F2F8E3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CsharpServiceWrapper", "CsharpServiceWrapper\CsharpServiceWrapper.vcxproj", "{6FBC53A5-1440-454F-87D6-7CE1029C616C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,16 +55,6 @@ Global
 		{05F08DF0-62F9-4674-9099-DA59DDECECA4}.Release|x64.Build.0 = Release|x64
 		{05F08DF0-62F9-4674-9099-DA59DDECECA4}.Release|x86.ActiveCfg = Release|Win32
 		{05F08DF0-62F9-4674-9099-DA59DDECECA4}.Release|x86.Build.0 = Release|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x64.ActiveCfg = Debug|x64
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x64.Build.0 = Debug|x64
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x86.ActiveCfg = Debug|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x86.Build.0 = Debug|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|Any CPU.ActiveCfg = Release|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x64.ActiveCfg = Release|x64
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x64.Build.0 = Release|x64
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x86.ActiveCfg = Release|Win32
-		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x86.Build.0 = Release|Win32
 		{21A61DFB-896A-4726-82D3-FB1967E89CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21A61DFB-896A-4726-82D3-FB1967E89CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A61DFB-896A-4726-82D3-FB1967E89CC7}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -89,6 +79,16 @@ Global
 		{B28B0AA6-FCA9-416F-93DF-482B27F2F8E3}.Release|x64.Build.0 = Release|Any CPU
 		{B28B0AA6-FCA9-416F-93DF-482B27F2F8E3}.Release|x86.ActiveCfg = Release|Any CPU
 		{B28B0AA6-FCA9-416F-93DF-482B27F2F8E3}.Release|x86.Build.0 = Release|Any CPU
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x64.ActiveCfg = Debug|x64
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x64.Build.0 = Debug|x64
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Debug|x86.Build.0 = Debug|Win32
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x64.ActiveCfg = Release|x64
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x64.Build.0 = Release|x64
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x86.ActiveCfg = Release|Win32
+		{6FBC53A5-1440-454F-87D6-7CE1029C616C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
