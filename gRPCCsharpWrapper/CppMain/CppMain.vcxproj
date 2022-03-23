@@ -153,6 +153,11 @@
   <ItemGroup>
     <ClCompile Include="CppMain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CsharpServiceWrapper\CsharpServiceWrapper.vcxproj">
+      <Project>{6fbc53a5-1440-454f-87d6-7ce1029c616c}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

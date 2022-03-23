@@ -1,21 +1,23 @@
 ﻿using System;
-using System.Net.Http;
+using Grpc.Core;
 using System.Threading.Tasks;
-using Grpc.Net.Client;
-using Greeter;
 
 namespace GreeterClient
 {
+    using Greeter;
     class Program
     {
-        static async Task Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            // The port number(5001) must match the port of the gRPC server.
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
-            var client = new Greeter.Greeter.GreeterClient(channel);
-            var reply = await client.SayHelloAsync(
-                              new HelloRequest { Name = "GreeterClient" });
+            Channel channel = new Channel("127.0.0.1:5001", ChannelCredentials.Insecure);
+
+            var client = new Greeter.GreeterClient(channel);
+            String user = "you";
+
+            var reply = client.SayHello(new HelloRequest { Name = user });
             Console.WriteLine("Greeting: " + reply.Message);
+
+            channel.ShutdownAsync().Wait();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
