@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-#include "GlobalCppObject.cpp"
+#include "GlobalCppObject.h"
 
 using namespace std;
 
@@ -18,10 +18,15 @@ public:
 	void SayHello(string& user)
 	{
 		m_count++;
-		//g_GlobalCppObject->IncreaseCounter();
+		if (g_GlobalCppObject == NULL)
+		{
+			cout << "Global object is not initialized" << endl;
+			return;
+		}
+		g_GlobalCppObject->IncreaseCounter();
 		cout << "hello " << user << " in c++" << endl;
 		cout << "count=" << m_count << endl;
-		//cout << "global counter=" << g_GlobalCppObject->GetCounter() << endl;
+		cout << "global counter=" << g_GlobalCppObject->GetCounter() << endl;
 	}
 
 private:

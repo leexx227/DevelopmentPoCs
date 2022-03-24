@@ -2,7 +2,7 @@
 
 
 #include <iostream>
-#include "../CppService/GlobalCppObject.cpp"
+#include "../CppService/GlobalCppObject.h"
 #include "../CsharpServiceWrapper/CsharpServiceWrapper.h"
 
 int main()

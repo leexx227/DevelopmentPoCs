@@ -20,3 +20,5 @@ private:
 	int m_counter;
 };
 
+// The global object
+extern GlobalCppObject* g_GlobalCppObject;

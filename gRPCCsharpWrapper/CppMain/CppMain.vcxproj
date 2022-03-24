@@ -154,6 +154,9 @@
     <ClCompile Include="CppMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CppService\CppService.vcxproj">
+      <Project>{42994809-45d6-4a9a-a042-34ef70e09fe4}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\CsharpServiceWrapper\CsharpServiceWrapper.vcxproj">
       <Project>{6fbc53a5-1440-454f-87d6-7ce1029c616c}</Project>
     </ProjectReference>
