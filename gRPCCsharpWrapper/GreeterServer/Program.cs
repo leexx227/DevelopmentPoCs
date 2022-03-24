@@ -23,7 +23,7 @@ namespace GreeterServer
         }
     }
 
-    class Program
+    public class Program
     {
         const int Port = 5001;
 

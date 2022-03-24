@@ -1,10 +1,16 @@
 // CppMain.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
+#include "../CppService/GlobalCppObject.cpp"
+#include "../CsharpServiceWrapper/CsharpServiceWrapper.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-	std::cin.get();
+	if (g_GlobalCppObject == NULL)
+	{
+		g_GlobalCppObject = new GlobalCppObject();
+	}
+    
+	StartServer();
 }
