@@ -1,3 +1,3 @@
 ﻿#pragma once
 
-void StartServer();
+void StartServer(long long ptr);

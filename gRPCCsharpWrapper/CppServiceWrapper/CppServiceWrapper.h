@@ -11,9 +11,9 @@ using namespace System;
 public ref class CppServiceWrapper
 {
 public:
-	CppServiceWrapper()
+	CppServiceWrapper(long long ptr)
 	{
-		this->handler = new RequestHandler();
+		this->handler = new RequestHandler(ptr);
 	}
 
 	void SayHello(String^ user)

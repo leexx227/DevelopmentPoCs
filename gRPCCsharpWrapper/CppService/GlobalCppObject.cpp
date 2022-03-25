@@ -3,4 +3,4 @@
 
 #include "GlobalCppObject.h"
 
-GlobalCppObject* g_GlobalCppObject = NULL;
+ GlobalCppObject* g_GlobalCppObject = NULL;

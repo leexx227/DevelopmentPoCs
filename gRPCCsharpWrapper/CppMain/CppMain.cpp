@@ -11,6 +11,8 @@ int main()
 	{
 		g_GlobalCppObject = new GlobalCppObject();
 	}
+
+	g_GlobalCppObject->IncreaseCounter();
     
-	StartServer();
+	StartServer((long long)g_GlobalCppObject);
 }

@@ -7,7 +7,7 @@ using namespace Greeter;
 
 auto_gcroot<GreeterServer::Program^> cSharpServer;
 
-void StartServer()
+void StartServer(long long ptr)
 {
-	cSharpServer->Main(gcnew array<String^>{ });
+	cSharpServer->Main(gcnew array<String^>{ptr.ToString()});
 }

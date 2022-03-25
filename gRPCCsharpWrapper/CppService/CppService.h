@@ -10,9 +10,10 @@ using namespace std;
 class RequestHandler
 {
 public:
-	RequestHandler()
+	RequestHandler(long long ptr)
 	{
 		m_count = 0;
+		g_GlobalCppObject = (GlobalCppObject*)ptr;
 	}
 
 	void SayHello(string& user)
@@ -21,7 +22,7 @@ public:
 		if (g_GlobalCppObject == NULL)
 		{
 			cout << "Global object is not initialized" << endl;
-			return;
+			return;			
 		}
 		g_GlobalCppObject->IncreaseCounter();
 		cout << "hello " << user << " in c++" << endl;

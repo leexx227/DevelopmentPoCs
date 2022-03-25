@@ -9,9 +9,9 @@ namespace GreeterServer
     {
         private CppServiceWrapper cppServiceWrapper;
 
-        public GreeterImpl()
+        public GreeterImpl(long ptr)
         {
-            cppServiceWrapper = new CppServiceWrapper();
+            cppServiceWrapper = new CppServiceWrapper(ptr);
         }
 
         // Server side handler of the SayHello RPC
@@ -31,7 +31,7 @@ namespace GreeterServer
         {
             Server server = new Server
             {
-                Services = { Greeter.BindService(new GreeterImpl()) },
+                Services = { Greeter.BindService(new GreeterImpl(long.Parse(args[0]))) },
                 Ports = { new ServerPort("127.0.0.1", Port, ServerCredentials.Insecure) }
             };
             server.Start();
