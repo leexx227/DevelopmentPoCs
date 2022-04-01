@@ -14,7 +14,7 @@ namespace GreeterClient
             var client = new Greeter.GreeterClient(channel);
             String user = "you";
 
-            var reply = client.SayHello(new HelloRequest { Name = user });
+            var reply = await client.SayHelloAsync(new HelloRequest { Name = user });
             Console.WriteLine("Greeting: " + reply.Message);
 
             channel.ShutdownAsync().Wait();
