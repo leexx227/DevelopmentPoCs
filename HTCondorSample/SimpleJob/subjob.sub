@@ -1,0 +1,12 @@
+# condor_submit subjob.sub
+
+executable   = test.py
+Arguments = $(Process)
+
+output       = out.$(Process)
+error        = err.$(Process)
+log          = test.log
+
+request_cpus   = 1
+
+queue 3
