@@ -1,0 +1,9 @@
+# condor_submit_dag diamond.dag
+
+JOB  A  subjob.sub
+JOB  B  subjob.sub
+JOB  C  subjob.sub
+JOB  D  subjob.sub
+VARS ALL_NODES name="$(JOB)"
+PARENT A CHILD B C
+PARENT B C CHILD D

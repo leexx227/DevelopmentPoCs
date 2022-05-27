@@ -1,0 +1,12 @@
+# condor_submit subjob.sub
+
+executable   = test.py
+Arguments = $(name)-$(cluster)
+
+output       = out-$(name)-$(cluster).out
+error        = err-$(name)-$(cluster).err
+log          = test.log
+
+request_cpus   = 1
+
+queue
