@@ -17,6 +17,12 @@ Run the following command on AKS cluster to indtall Volcano.
 kubectl apply -f https://raw.githubusercontent.com/volcano-sh/volcano/master/installer/volcano-development.yaml
 ```
 
+You can check the Volcano component status after the installation by running the following command:
+
+```
+kubectl get all -n volcano-system
+```
+
 ## Build Docker Image
 Run the following command to build and push docker image:
 
