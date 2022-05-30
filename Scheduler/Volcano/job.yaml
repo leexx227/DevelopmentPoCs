@@ -1,0 +1,29 @@
+# kubectl apply -f job.yaml
+apiVersion: batch.volcano.sh/v1alpha1
+kind: Job
+metadata:
+  name: job-1
+spec:
+  minAvailable: 1
+  schedulerName: volcano
+  queue: test
+  policies:
+    - event: PodEvicted
+      action: RestartJob
+  tasks:
+    - replicas: 1
+      name: volcano-test-task
+      policies:
+      - event: TaskCompleted
+        action: CompleteJob
+      template:
+        spec:
+          containers:
+            - image: xili10dockerregistry.azurecr.io/volcano-test:v2
+              name: volcano-test-container
+              resources:
+                requests:
+                  cpu: 1
+                limits:
+                  cpu: 1
+          restartPolicy: Never
