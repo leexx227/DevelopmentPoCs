@@ -40,6 +40,6 @@ srun -n1 -w "hpc-pg0-1" cat my.stdout
 ## To run job in an interactive way
 ```
 salloc -N3 bash
-srun -l cat /shared/home/result.out
+srun -l cat /shared/home/result.txt
 exit
 ```
