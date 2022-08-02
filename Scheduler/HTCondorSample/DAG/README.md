@@ -4,3 +4,18 @@ Usage:
 ```
 condor_submit_dag diamond.dag
 ```
+
+Monitoring:
+```
+condor_q -nobatch
+```
+
+To check compute node status:
+```
+condor_status
+```
+
+To check log:
+```
+vim diamond.dag.dagman.out
+```
