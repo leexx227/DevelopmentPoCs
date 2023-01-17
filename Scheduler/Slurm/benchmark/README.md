@@ -27,6 +27,6 @@ sbatch batch.slurm
 ```
 To calculate the result, run
 ```
-bash calculate.sh <jobname>
+bash calculate.sh <job_name>
 ```
-where you can ge the `<jobname>` when you submitting job array.
+where you can get the `<job_name>` when you submitting job array.

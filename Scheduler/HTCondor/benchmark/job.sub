@@ -1,0 +1,12 @@
+# condor_submit job.sub
+
+executable   = /bin/sleep
+Arguments = 0
+
+output       = condor-$(Cluster)-$(Process).out
+error        = condor-$(Cluster)-$(Process).err
+log          = condor-$(Cluster).log
+
+request_cpus = 1
+
+queue 1024
